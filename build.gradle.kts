@@ -29,8 +29,6 @@ dependencies {
 
     implementation("jakarta.annotation:jakarta.annotation-api:${project.property("lib_annotation_api_version")}")
 
-    implementation("com.github.simple-mocks:api-error:${project.property("lib_api_error_version")}")
-
 }
 
 tasks.withType<JavaCompile>().configureEach {
