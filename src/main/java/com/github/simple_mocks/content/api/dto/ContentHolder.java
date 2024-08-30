@@ -7,6 +7,7 @@ import java.util.Map;
 /**
  * @author sibmaks
  * @since 0.0.1
+ * @param <T> type of content
  */
 @Setter
 @Getter

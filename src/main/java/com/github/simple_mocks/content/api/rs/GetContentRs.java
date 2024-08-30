@@ -6,6 +6,8 @@ import lombok.Builder;
 import java.util.Map;
 
 /**
+ * @param contents map of found content, key is code in a group
+ * @param <T>      type of content
  * @author sibmaks
  * @since 0.0.1
  */

@@ -13,7 +13,8 @@ public interface ContentService {
     /**
      * Get content from storage
      *
-     * @param rq request for content
+     * @param rq  request for content
+     * @param <T> type of content
      * @return list of found content
      */
     <T> GetContentRs<T> getContent(@Nonnull GetContentRq rq);
