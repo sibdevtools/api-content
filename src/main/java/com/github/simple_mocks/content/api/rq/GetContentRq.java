@@ -10,13 +10,13 @@ import java.util.List;
  *
  * @param systemCode system code
  * @param type       type of content
- * @param code       code of content group
+ * @param groupCode  code of content group
  * @param conditions conditions for content lookup
  */
 @Builder
 public record GetContentRq(String systemCode,
                            String type,
-                           String code,
+                           String groupCode,
                            List<Condition> conditions) {
 
 }
