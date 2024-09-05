@@ -17,6 +17,6 @@ public interface ContentService {
      * @param <T> type of content
      * @return list of found content
      */
-    <T> GetContentRs<T> getContent(@Nonnull GetContentRq rq);
+    <T> GetContentRs<T> getContent(@Nonnull GetContentRq<T> rq);
 
 }

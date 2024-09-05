@@ -14,9 +14,10 @@ import java.util.List;
  * @param conditions conditions for content lookup
  */
 @Builder
-public record GetContentRq(String systemCode,
-                           String type,
-                           String groupCode,
-                           List<Condition> conditions) {
+public record GetContentRq<T>(String systemCode,
+                              String type,
+                              String groupCode,
+                              List<Condition> conditions,
+                              Class<T> contentType) {
 
 }
