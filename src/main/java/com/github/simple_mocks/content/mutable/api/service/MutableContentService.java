@@ -60,6 +60,14 @@ public interface MutableContentService {
     <T> void updateContent(UpdateContentRq<T> rq);
 
     /**
+     * Update content's attributes in content service.
+     * In case if the content doesn't exist, throw an exception.
+     *
+     * @param rq update request
+     */
+    void updateContentAttributes(UpdateContentAttributesRq rq);
+
+    /**
      * Delete a content in content service.
      * Do nothing in case if the content is already deleted.
      *
