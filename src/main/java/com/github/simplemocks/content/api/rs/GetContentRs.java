@@ -1,8 +1,8 @@
 package com.github.simplemocks.content.api.rs;
 
+import com.github.simplemocks.common.api.dto.ErrorRsDto;
 import com.github.simplemocks.common.api.rs.StandardBodyRs;
 import com.github.simplemocks.content.api.dto.ContentHolder;
-import lombok.Builder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +15,6 @@ import java.util.Optional;
  * @author sibmaks
  * @since 0.0.1
  */
-@Builder
 public class GetContentRs<T> extends StandardBodyRs<HashMap<String, ContentHolder<T>>> {
 
     /**
@@ -29,6 +28,15 @@ public class GetContentRs<T> extends StandardBodyRs<HashMap<String, ContentHolde
                         .map(HashMap::new)
                         .orElseGet(HashMap::new)
         );
+    }
+
+    /**
+     * Construct get content response with error
+     *
+     * @param error happened error
+     */
+    public GetContentRs(ErrorRsDto error) {
+        super(error);
     }
 
 }
