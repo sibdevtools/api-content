@@ -1,4 +1,4 @@
-package com.github.simple_mocks.content.api.dto;
+package com.github.simplemocks.content.api.dto;
 
 import lombok.*;
 

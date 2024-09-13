@@ -1,4 +1,4 @@
-package com.github.simple_mocks.content.api.condition;
+package com.github.simplemocks.content.api.condition;
 
 import lombok.Getter;
 

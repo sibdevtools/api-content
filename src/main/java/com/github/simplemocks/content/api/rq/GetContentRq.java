@@ -1,6 +1,6 @@
-package com.github.simple_mocks.content.api.rq;
+package com.github.simplemocks.content.api.rq;
 
-import com.github.simple_mocks.content.api.condition.Condition;
+import com.github.simplemocks.content.api.condition.Condition;
 import lombok.Builder;
 
 import java.util.List;

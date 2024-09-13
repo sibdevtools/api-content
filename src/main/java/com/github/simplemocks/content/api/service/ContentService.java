@@ -1,10 +1,12 @@
-package com.github.simple_mocks.content.api.service;
+package com.github.simplemocks.content.api.service;
 
-import com.github.simple_mocks.content.api.rq.GetContentRq;
-import com.github.simple_mocks.content.api.rs.GetContentRs;
+import com.github.simplemocks.content.api.rq.GetContentRq;
+import com.github.simplemocks.content.api.rs.GetContentRs;
 import jakarta.annotation.Nonnull;
 
 /**
+ * Readonly content service
+ *
  * @author sibmaks
  * @since 0.0.1
  */

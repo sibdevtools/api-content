@@ -1,8 +1,10 @@
-package com.github.simple_mocks.content.mutable.api.service;
+package com.github.simplemocks.content.mutable.api.service;
 
-import com.github.simple_mocks.content.mutable.api.rq.*;
+import com.github.simplemocks.content.mutable.api.rq.*;
 
 /**
+ * Mutable content service
+ *
  * @author sibmaks
  * @since 0.0.1
  */
