@@ -1,4 +1,4 @@
-package com.github.simplemocks.content.api.condition;
+package com.github.sibdevtools.content.api.condition;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

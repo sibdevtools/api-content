@@ -6,7 +6,10 @@ plugins {
     id("java")
 }
 
-version = "${project.property("version")}"
+val versionFromProperty = "${project.property("version")}"
+val versionFromEnv: String? = System.getenv("VERSION")
+
+version = versionFromEnv ?: versionFromProperty
 group = "${project.property("group")}"
 
 val targetJavaVersion = (project.property("jdk_version") as String).toInt()
@@ -29,7 +32,7 @@ dependencies {
 
     implementation("jakarta.annotation:jakarta.annotation-api:${project.property("lib_annotation_api_version")}")
 
-    implementation("com.github.simple-mocks:api-common:${project.property("lib_api_common_version")}")
+    implementation("com.github.sibdevtools:api-common:${project.property("lib_api_common_version")}")
 }
 
 tasks.withType<JavaCompile>().configureEach {
@@ -75,7 +78,7 @@ publishing {
             from(components["java"])
             pom {
                 packaging = "jar"
-                url = "https://github.com/simple-mocks/api-content"
+                url = "https://github.com/sibdevtools/api-content"
 
                 licenses {
                     license {
@@ -85,9 +88,9 @@ publishing {
                 }
 
                 scm {
-                    connection.set("scm:https://github.com/simple-mocks/api-content.git")
-                    developerConnection.set("scm:git:ssh://github.com/simple-mocks")
-                    url.set("https://github.com/simple-mocks/api-content")
+                    connection.set("scm:https://github.com/sibdevtools/api-content.git")
+                    developerConnection.set("scm:git:ssh://github.com/sibdevtools")
+                    url.set("https://github.com/sibdevtools/api-content")
                 }
 
                 developers {

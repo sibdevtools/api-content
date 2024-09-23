@@ -1,4 +1,4 @@
-# Simple Mock - Content API
+# SibDevTools - Content API
 
 ## To build
 

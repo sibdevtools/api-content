@@ -1,4 +1,4 @@
-package com.github.simplemocks.content.mutable.api.rq;
+package com.github.sibdevtools.content.mutable.api.rq;
 
 import lombok.Builder;
 

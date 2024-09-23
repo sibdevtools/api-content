@@ -1,7 +1,7 @@
-package com.github.simplemocks.content.api.service;
+package com.github.sibdevtools.content.api.service;
 
-import com.github.simplemocks.content.api.rq.GetContentRq;
-import com.github.simplemocks.content.api.rs.GetContentRs;
+import com.github.sibdevtools.content.api.rq.GetContentRq;
+import com.github.sibdevtools.content.api.rs.GetContentRs;
 import jakarta.annotation.Nonnull;
 
 /**
